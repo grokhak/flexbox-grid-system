@@ -1,0 +1,58 @@
+html {
+  font-size: 62.5%;
+}
+body {
+}
+.wrapper {
+  font-family: "Yu Gothic", YuGothic, Blank;
+  font-feature-settings : "pwid" 1;
+  font-size: 1.4rem;
+  line-height: 1.4em;
+  display: flex;
+  flex-direction: column;
+  max-width: 1030px;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+header {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background: #E9E9E9;
+  li {
+    display: inline-block;
+  }
+}
+main {
+  flex: 1;
+}
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  section {
+    flex: 1;
+    margin: 10px;
+    h1 {
+      font-weight: bold;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+footer {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background: #E9E9E9;
+}
+
+
+@media only screen and (max-width:768px) {
+  .col {
+    flex-direction: column;
+   }
+}
